@@ -1,5 +1,6 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import "../styles/Home.css";
 
 const Home = () => {
   const [messages, setMessages] = useState([]);
@@ -11,8 +12,18 @@ const Home = () => {
     setNewMessages("");
   };
 
+  const messageSideLogic = () => {
+    messages.map((message, index) => {
+      console.log(index);
+    });
+  };
+
+  useEffect(() => {
+    messageSideLogic();
+  }, [messages]);
+
   return (
-    <div>
+    <div className="container">
       <ul>
         {messages.map((message, index) => (
           <li key={index}>{message}</li>
@@ -23,7 +34,9 @@ const Home = () => {
           value={newMessage}
           onChange={(event) => setNewMessages(event.target.value)}
         />
-        <button type="submit">Send</button>
+        <button type="submit" className="form-btn">
+          Send
+        </button>
       </form>
     </div>
   );

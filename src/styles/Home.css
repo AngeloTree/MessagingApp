@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  flex-direction: column;
+}
+
+.container ul {
+  background-color: rgba(247, 247, 251, 0.59);
+  height: 300px;
+  width: 400px;
+  margin: 0;
+  border-radius: 20px;
+  margin-bottom: 2px;
+}
+
+input {
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+
+.form-btn {
+  margin-left: 10px;
+}
