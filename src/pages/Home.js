@@ -24,11 +24,18 @@ const Home = () => {
 
   return (
     <div className="container">
-      <ul>
-        {messages.map((message, index) => (
-          <li key={index}>{message}</li>
-        ))}
-      </ul>
+      <div className="ul-containers">
+        <ul className="left-ul">
+          {messages.map((message, index) => (
+            <li key={index}>{message}</li>
+          ))}
+        </ul>
+        <ul className="right-ul">
+          {messages.map((message, index) => (
+            <li key={index}>{message}</li>
+          ))}
+        </ul>
+      </div>
       <form onSubmit={handleSubmit}>
         <input
           value={newMessage}

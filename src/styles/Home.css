@@ -6,10 +6,43 @@
   flex-direction: column;
 }
 
+.ul-containers {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-ul {
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.right-ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.left-ul li {
+  margin-top: 40px;
+  width: 100%;
+  background-color: rgba(205, 203, 203, 0.701);
+  border-radius: 30px;
+  padding: 2px 6px;
+  font-size: 14px;
+}
+
+.right-ul li {
+  background-color: rgba(0, 128, 255, 0.909);
+  margin-bottom: 25px;
+  width: 100%;
+  border-radius: 30px;
+  padding: 2px 6px;
+  font-size: 14px;
+}
+
 .container ul {
-  background-color: rgba(247, 247, 251, 0.59);
   height: 300px;
-  width: 400px;
+  width: 100px;
   margin: 0;
   border-radius: 20px;
   margin-bottom: 2px;
